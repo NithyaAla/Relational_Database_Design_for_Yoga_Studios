@@ -1,0 +1,5 @@
+The database offers great analytics capabilities, a small part of which is demonstrated using python libraries.
+This analysis can be extended to other yoga studios in Boston and Massachusetts.  
+However, as more data is accumulated on a regular basis, updating the 'Rating' record based on the 'Score' would become a tedious task in a relational database. 
+To analyze CorePower yoga's operations all over the US, a NoSQL implementation would be a better choice.
+For performing day-to-day analysis of student satisfaction and trainer ratings, a streaming analytics platform like Databricks or Amazon Kinesis is recommended.  
