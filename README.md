@@ -21,3 +21,4 @@ The database was modeled taking in requirements set by the management for each t
 
 A connection to the database was successfully established using Python and visualizations that would help the executive team make better decisions for the best performing trainers were generated using seaborn and matplotlib. 
   
+To scale up the database and include details of all studios in Massachusetts, migration to a platform like Snowflake is the best choice. The MySQL database was migrated to Snowflake and dashboards were created to identify popular yoga forms and trainers with high ratings. 
