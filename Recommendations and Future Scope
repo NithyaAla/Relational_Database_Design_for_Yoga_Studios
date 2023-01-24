@@ -1,5 +1,5 @@
-The database offers great analytics capabilities, a small part of which is demonstrated using python libraries.
-This analysis can be extended to other yoga studios in Boston and Massachusetts.  
-However, as more data is accumulated on a regular basis, updating the 'Rating' record based on the 'Score' would become a tedious task in a relational database. 
+While the MySQL database serves the purpose of Fenway studio, to extend this analysis to other studios in Boston and Massachusetts, a cloud-based approach is ideal.
+Snowflake offers near-unlimited scale and performance, so for organizations like CorePower Yoga where data is accumulated on a regular basis, migration of existing databases to Snowflake is recommended. 
+With Snowflake, it is possible to create dashboards that help the executive team identify trends quickly and effortlessly and make data-driven decisions. 
 To analyze CorePower yoga's operations all over the US, a NoSQL implementation would be a better choice.
 For performing day-to-day analysis of student satisfaction and trainer ratings, a streaming analytics platform like Databricks or Amazon Kinesis is recommended.  
