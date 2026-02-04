@@ -58,7 +58,7 @@ The database was fully implemented using MySQL.
 
 A NoSQL prototype using MongoDB was developed with three collections to evaluate feasibility for identifying trainers contributing to enrollment growth.
 
-Data Access, Analysis, and Visualization
+### Data Access, Analysis, and Visualization
 
 A connection to the database was established using Python.
 
