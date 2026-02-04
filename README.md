@@ -1,24 +1,79 @@
-# Relational_Database_Design_for_Yoga_Studios
-Relational database design for one of the largest yoga studio chains in the US, CorePower Yoga. 
+### Relational Database Design for Yoga Studio Analytics
 
-This relational database helps the executive team of CorePower Yoga’s Fenway studio perform data analysis to find the trainers with high ratings. The database efficiently captures the details of various sessions conducted by the trainers and implements an algorithm to rate the trainers based on student responses to a satisfaction survey.
+This project presents a relational database design for a large multi-location yoga studio organization. The database enables studio management and executive teams to perform data analysis to identify high-performing trainers based on student engagement and satisfaction metrics.
 
-The student satisfaction survey analyzes the level of satisfaction of students on a 0-5 scale. The database stores the score provided by students where 0 is the lowest and 5 is the highest possible score. A trainer is rated with ‘Y’ when he/she receives a score greater than or equal to 3. All scores below 3 lead to an ‘N’.
+The database captures detailed information about yoga sessions conducted by trainers and implements a rating mechanism based on student feedback collected through satisfaction surveys.
 
-The students also have an option of choosing a diet plan suggested by one of the dieticians or adhering to their own diet plan. 
+### Student Satisfaction and Trainer Rating Logic
 
-The database helps CorePower Yoga’s management gain insights to answer the following questions and identify top trainers,
-1.	Which sessions are held in a particular studio type (Basic, Luxury, Aerial)? 
-2.	Which sessions were attended by a student enrolled under a trainer? Was it a live-streaming or in-person session? 
-3.	How many students are enrolled under a trainer? 
-4.	Which trainers have a high number of students enrolled? 
-5.	Which students opted for a diet plan and which dietician suggested the plan? 
-6.	How many hours does it take for students to learn a yoga form? 
-7.	Which survey was taken by which student and what is the score provided by the student to the trainer? How can a trainer’s rating be decided from the score provided by the student in the survey? 
-8.	What is the rating of each trainer? Which trainers are among the best? 
+Students evaluate trainers using a satisfaction survey with scores ranging from 0 to 5, where:
 
-The database was modeled taking in requirements set by the management for each training session. The complete database was implemented in MySQL, and a prototype with 3 collections that would aid in finding the trainers responsible for enrollment hike was implemented on MongoDB to test the feasibility of the database in a NoSQL environment.
+0 represents the lowest satisfaction
 
-A connection to the database was successfully established using Python and visualizations that would help the executive team make better decisions for the best performing trainers were generated using seaborn and matplotlib. 
-  
-To scale up the database and include details of all studios in Massachusetts, migration to a platform like Snowflake is the best choice. The MySQL database was migrated to Snowflake and dashboards were created to identify popular yoga forms and trainers with high ratings. 
+5 represents the highest satisfaction
+
+Trainer ratings are derived from survey scores as follows:
+
+A trainer receives a rating of ‘Y’ if the score is greater than or equal to 3
+
+Scores below 3 result in a rating of ‘N’
+
+This logic enables consistent and scalable evaluation of trainer performance.
+
+Diet Plan Tracking
+
+Students may either:
+
+Opt for a diet plan suggested by an assigned dietician, or
+
+Follow their own independent diet plan
+
+The database records diet plan selections and links suggested plans to the respective dieticians.
+
+### Analytical Use Cases Supported
+
+The database is designed to answer key operational and strategic questions, including:
+
+Which yoga sessions are conducted in each studio type (e.g., Basic, Luxury, Aerial)?
+
+Which sessions were attended by a student enrolled under a specific trainer, and were they conducted via live-streaming or in person?
+
+How many students are enrolled under each trainer?
+
+Which trainers have the highest student enrollments?
+
+Which students opted for a diet plan, and which dietician recommended it?
+
+How many instructional hours are required for students to learn a specific yoga form?
+
+Which surveys were taken by which students, what scores were provided, and how trainer ratings are derived from those scores?
+
+What is the overall rating of each trainer, and which trainers are top performers?
+
+### Database Design and Implementation
+
+The relational schema was modeled based on management-defined requirements for training sessions, student enrollment, surveys, and dietary plans.
+
+The database was fully implemented using MySQL.
+
+A NoSQL prototype using MongoDB was developed with three collections to evaluate feasibility for identifying trainers contributing to enrollment growth.
+
+Data Access, Analysis, and Visualization
+
+A connection to the database was established using Python.
+
+Analytical queries were executed, and visualizations were generated using matplotlib and seaborn to support data-driven decision-making for identifying high-performing trainers.
+
+### Scalability and Cloud Migration
+
+To support scalability and multi-location analytics:
+
+The relational database was migrated from MySQL to Snowflake
+
+Analytical dashboards were created to identify:
+
+Popular yoga forms
+
+Trainers with consistently high ratings
+
+This migration enables efficient querying, improved performance, and enterprise-scale analytics.
